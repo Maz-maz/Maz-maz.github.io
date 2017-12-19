@@ -1,0 +1,66 @@
+/*Module 3 horizontal accordion - begin*/
+/*Transition time of changin of accr width
+ and accr content divs*/
+/*!!! Make later similar height to the buttons and content divs*/
+/*!!! Add later transition effect*/
+/*General style*/
+.mod_3_hr_accr {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: lightcoral;
+  -webkit-box-sizing: content-box !important;
+          box-sizing: content-box !important;
+  -webkit-transition: width 1s;
+  transition: width 1s; }
+
+/*Clearfix-hack*/
+.mod_3_hr_accr::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.mod_3_hr_accr__item {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  display: block;
+  float: left; }
+
+/*Clearfix-hack*/
+.mod_3_hr_accr__item::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.mod_3_hr_accr__item > * {
+  display: block;
+  float: left;
+  /*below is important to working properly "offsetHeight"
+  and other things*/
+  margin: 0;
+  padding: 0; }
+
+/*!!! Below must be made better*/
+/*!!! Add border box*/
+.mod_3_hr_accr__button, .mod_3_hr_accr__content {
+  border: 1px solid black; }
+
+.mod_3_hr_accr__content {
+  -webkit-box-sizing: border-box !important;
+          box-sizing: border-box !important;
+  overflow: hidden;
+  background-color: lightcyan;
+  width: auto;
+  -webkit-transition: width 1s;
+  transition: width 1s; }
+
+/*Style of accr buttons*/
+.mod_3_hr_accr__button:hover {
+  cursor: pointer;
+  background-color: lightpink; }
+
+/*Style of opened item*/
+.mod_3_hr_accr__item--open {
+  border: 1px solid blue; }
+
+/*Module 3 horizontal accordion - end*/

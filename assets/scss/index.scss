@@ -1,0 +1,185 @@
+$header_padding: 15px;
+
+/*0. General style*/
+
+/*0.1 Color palette*/
+$main_text_color: rgb(19, 19, 19);
+$header_bck_color-lt-1: rgb(247, 247, 247);
+$header_bck_color: rgb(236, 236, 236);
+$header_bck_color-dr-1: rgb(221, 221, 221);
+$header_bck_color-dr-2: rgb(199, 199, 199);
+$header_bck_color-dr-3: rgb(163, 163, 163);
+$header_bck_color-dr-3_1: rgb(128,128,128);
+$header_bck_color-dr-4: rgb(122, 122, 122);
+$main_link_col_activ: rgb(0, 17, 207);
+$main_link_col_activated:rgb(218, 31, 208);
+
+/*0.2 font style and variables*/
+
+
+html {
+  color: $main_text_color;
+}
+
+body {
+  color: $main_text_color;
+  background-color: $main_text_color;
+}
+
+/*1. Header style - begin*/
+/*!!! This is a must be done with some structure*/
+
+#mod_2_header {
+  background-color: $header_bck_color;
+  padding: $header_padding;
+}
+
+#mod_2_header::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*Picture insert style*/
+$face_picture_ins_w: 100px;
+
+#face_picture_ins {
+  box-sizing: content-box;
+  //float: left;
+  margin: auto;
+  width: $face_picture_ins_w;
+}
+
+#face_picture_ins img {
+  width: $face_picture_ins_w;
+}
+
+/*Contact info style - style of hor. accordion*/
+
+#ins_1_mod_3__upper_pudding {
+  padding: 20px 0 0;
+}
+
+#ins_1_mod_3 {
+  padding: $header_padding 0 0 0;
+  color: $main_text_color;
+}
+
+#ins_1_mod_3 .mod_3_hr_accr {
+  background-color: $header_bck_color-dr-3;
+  padding: $header_padding/2;
+}
+
+#ins_1_mod_3 .mod_3_hr_accr__item--open{
+  background-color: $header_bck_color-dr-1;
+}
+
+#ins_1_mod_3 .mod_3_hr_accr__button {
+  padding-left: $header_padding/2;
+  padding-right: $header_padding/2;
+
+  font-size: 1.5em;
+  border: none;
+}
+
+#ins_1_mod_3 .mod_3_hr_accr__button:hover {
+  background-color: $header_bck_color-dr-2;
+}
+
+/*Style of accordion container*/
+/*Also this style will have button of pened item*/
+#ins_1_mod_3 .mod_3_hr_accr__cont{
+  border: none;
+}
+
+#ins_1_mod_3 .mod_3_hr_accr__item--open .mod_3_hr_accr__button {
+  border-right: 2px dotted $header_bck_color-dr-3;
+}
+
+#ins_1_mod_3 .mod_3_hr_accr__cont p {
+  padding-top: $header_padding/3;
+  padding-left: $header_padding/4;
+  padding-right: $header_padding/4;
+}
+
+/*Font and text style*/
+#ins_1_mod_3 p {
+  margin: 0;
+  padding: 0;
+}
+
+#ins_1_mod_3 #ins_1_mod_3__contact_text {
+  padding-right: $header_padding/2;
+  font-size: 0.8em;
+  line-height: 1.1;
+}
+
+/*1. - end*/
+
+/*2. Styling of main area (mod_2_main) - begin*/
+#mod_2_main {
+  #mod_2_main__tabs {
+    background-color: $header_bck_color-dr-3;
+    border: none;
+  }
+
+  .tabs-title:hover {
+    background-color: $header_bck_color-dr-2;
+  }
+
+  .tabs-title.is-active {
+    background-color: $header_bck_color-dr-4;
+  }
+
+  .tabs-title a {
+    background-color: transparent;
+    color: $main_text_color;
+    padding: $header_padding $header_padding/1.5 $header_padding;
+  }
+
+  
+  > .tabs-content {
+    border: none;
+    border-top: 2px solid $header_bck_color-dr-4;
+    background-color: $header_bck_color;
+  }
+
+  > .tabs-content > .tabs-panel {
+    padding: 0;
+  }
+
+  /*2.1 General style of slids inside main area - begin*/
+  .mod_4_resp_sl {
+    color: $main_text_color;
+
+    /*Make all links of slides like they are not active*/
+    .mod_4_resp_sl__list a {
+      color: $header_bck_color-dr-3_1;
+      cursor: default;
+    }
+    
+    /*Active will be only those which have class that joins them to some slides*/
+    .mod_4_resp_sl__list a[class*="mod_4_resp_sl__lk"] {
+      color: $main_link_col_activ;
+      cursor: pointer;
+    }
+    
+    /*Activated link will have some different style*/
+    .mod_4_resp_sl__list a[class*="mod_4_resp_sl__lk"].mod_4_resp_sl--is_active {
+      color: $main_link_col_activated;
+    }
+  }
+  /*2.1 - end*/
+}
+/*2. - end*/
+
+/*3. Styling of footer - begin*/
+#mod_2_footer {
+  background-color: $header_bck_color-dr-3;
+  padding: $header_padding/2;
+}
+
+#mod_2_footer__copyright {
+  text-align: right;
+}
+/*3. - end*/
