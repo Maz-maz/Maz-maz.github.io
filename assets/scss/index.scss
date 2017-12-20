@@ -168,6 +168,19 @@ $face_picture_ins_w: 100px;
     .mod_4_resp_sl__list a[class*="mod_4_resp_sl__lk"].mod_4_resp_sl--is_active {
       color: $main_link_col_activated;
     }
+
+    a {
+      color: $main_link_col_activ;
+    }
+
+    p {
+      line-height: 1.2;
+      //margin-bottom: 0.5rem;
+    }
+
+    ul {
+      margin: 2px;
+    }
   }
   /*2.1 - end*/
 }

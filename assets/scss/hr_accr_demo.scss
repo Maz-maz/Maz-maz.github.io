@@ -1,6 +1,13 @@
+$main_link_col_activ: rgb(0, 17, 207);
+
 body {
   background-color: rgb(231, 231, 231);
   //margin: 0;
+  padding: 10px;
+}
+
+a.index_link {
+  color: $main_link_col_activ;
 }
 
 .mod_3_hr_accr p {
@@ -13,7 +20,7 @@ body {
   padding: 20px 0 20px;
   //background-color: rgb(54, 54, 54);
 
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -25,5 +32,17 @@ body {
 }
 
 #small_div {
-  width: 30%;
+  width: 40%;
+}
+
+.mod_3_hr_accr__button:hover {
+  background-color: rgb(226, 178, 119);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
 }

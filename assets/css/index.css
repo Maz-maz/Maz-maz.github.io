@@ -111,6 +111,12 @@ body {
       cursor: pointer; }
     #mod_2_main .mod_4_resp_sl .mod_4_resp_sl__list a[class*="mod_4_resp_sl__lk"].mod_4_resp_sl--is_active {
       color: #da1fd0; }
+    #mod_2_main .mod_4_resp_sl a {
+      color: #0011cf; }
+    #mod_2_main .mod_4_resp_sl p {
+      line-height: 1.2; }
+    #mod_2_main .mod_4_resp_sl ul {
+      margin: 2px; }
 
 /*2. - end*/
 /*3. Styling of footer - begin*/
