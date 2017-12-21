@@ -31,6 +31,11 @@ html, body {
   #mod_2_canvas {
     margin: 0 10px 0; } }
 
+@media only screen and (max-width: 1024px) {
+  /*!!!delete later*/
+  .mod_4_resp_sl ul {
+    margin-left: 2px; } }
+
 /*pc layout*/
 @media only screen and (min-width: 1024px) {
   #mod_2_canvas {

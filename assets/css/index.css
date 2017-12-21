@@ -1,5 +1,19 @@
 /*0. General style*/
 /*0.1 Color palette*/
+/*New green*/
+/*
+$base_color: rgb(0,154,141);
+$main_text_color: rgb(9, 19, 18);
+$header_bck_color-lt-1: rgb(247, 247, 247);
+$header_bck_color: rgb(214, 235, 233);;
+$header_bck_color-dr-1: rgb(200, 221, 220);
+$header_bck_color-dr-2: rgb(140, 190, 186);
+$header_bck_color-dr-3: rgb(92, 155, 150);
+$header_bck_color-dr-3_1: rgb(66, 110, 107);
+$header_bck_color-dr-4: rgb(67, 110, 107);
+$main_link_col_activ: rgb(0, 17, 207);
+$main_link_col_activated:rgb(218, 31, 208);
+*/
 /*0.2 font style and variables*/
 html {
   color: #131313; }
@@ -115,8 +129,6 @@ body {
       color: #0011cf; }
     #mod_2_main .mod_4_resp_sl p {
       line-height: 1.2; }
-    #mod_2_main .mod_4_resp_sl ul {
-      margin: 2px; }
 
 /*2. - end*/
 /*3. Styling of footer - begin*/

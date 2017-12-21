@@ -14,6 +14,23 @@ $header_bck_color-dr-4: rgb(122, 122, 122);
 $main_link_col_activ: rgb(0, 17, 207);
 $main_link_col_activated:rgb(218, 31, 208);
 
+/*New green*/
+/*
+$base_color: rgb(0,154,141);
+$main_text_color: rgb(9, 19, 18);
+$header_bck_color-lt-1: rgb(247, 247, 247);
+$header_bck_color: rgb(214, 235, 233);;
+$header_bck_color-dr-1: rgb(200, 221, 220);
+$header_bck_color-dr-2: rgb(140, 190, 186);
+$header_bck_color-dr-3: rgb(92, 155, 150);
+$header_bck_color-dr-3_1: rgb(66, 110, 107);
+$header_bck_color-dr-4: rgb(67, 110, 107);
+$main_link_col_activ: rgb(0, 17, 207);
+$main_link_col_activated:rgb(218, 31, 208);
+*/
+
+
+
 /*0.2 font style and variables*/
 
 
@@ -176,10 +193,6 @@ $face_picture_ins_w: 100px;
     p {
       line-height: 1.2;
       //margin-bottom: 0.5rem;
-    }
-
-    ul {
-      margin: 2px;
     }
   }
   /*2.1 - end*/
